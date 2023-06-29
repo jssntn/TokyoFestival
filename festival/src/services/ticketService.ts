@@ -3,16 +3,21 @@ import { Prisma } from "@prisma/client";
 import { useState } from "react";
 
 const prisma = new PrismaClient();
-const qtdIngressos = 100; //Define a quantidade total de ingressos a serem vendidos
+const qtdIngressos = 4; //Define a quantidade total de ingressos a serem vendidos
 
-const [ingressosVendidos, setIngressosVendidos] = useState<number>(0);
+
 
 
 
 class TicketService{
 
-    public verificaDisponibilidade(){
-        if(ingressosVendidos < qtdIngressos){
+    public async verificaDisponibilidade(){
+        let lastRecord = (await prisma.ingresso.findMany({
+            orderBy: {
+              idIngresso: 'desc',
+            },
+          })).shift()?.idIngresso;
+        if((lastRecord as number) < qtdIngressos){
             return true;
         }
         return false;
@@ -25,7 +30,6 @@ class TicketService{
                 idUser: ticket.idUser
             }}
         );
-        setIngressosVendidos(ingressosVendidos + 1);
         return newTicket;
     }
 
@@ -57,3 +61,5 @@ class TicketService{
     }
 
 }
+
+export default new TicketService();
