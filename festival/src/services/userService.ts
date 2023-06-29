@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 
 class UserService {
 
-    public async verifyUser(email:string): Promise<boolean> {
+    public async checkEmail(email:string): Promise<boolean> {
         const user = await prisma.user.findFirst({
             where: {
                 email: email
@@ -19,9 +19,15 @@ class UserService {
 
     //CADASTRO DE USUÁRIO
 
-    public async createUser(user: User): Promise<User> {
+    public async createUser(name:string, age: number, email:string, password:string): Promise<User> {
+        
         const newUser = await prisma.user.create({
-            data: user
+            data: {
+                name: name,
+                age: age,
+                email: email,
+                password: password
+            }
         });
         return newUser;
     }
@@ -46,21 +52,20 @@ class UserService {
 
     //LOGIN DE USUÁRIO
 
-    public async loginUser(email: string, senha: string): Promise<boolean> {
+    public async loginUser(email: string, senha: string): Promise<User | null> {
         const user = await prisma.user.findFirst({
             where: {
                 email: email,
                 password: senha
             }
         });
-        if(user){
-            return true;
-        }
-        return false;
+        return user;
     }
 
-    
+
 
 
 
 }
+
+export default new UserService();

@@ -3,7 +3,7 @@ import { Prisma } from "@prisma/client";
 import { useState } from "react";
 
 const prisma = new PrismaClient();
-const qtdIngressos = 100;
+const qtdIngressos = 100; //Define a quantidade total de ingressos a serem vendidos
 
 const [ingressosVendidos, setIngressosVendidos] = useState<number>(0);
 
