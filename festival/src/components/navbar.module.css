@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;700&family=Dela+Gothic+One&family=Josefin+Sans:wght@600&family=Lobster&family=Oooh+Baby&family=Overpass:wght@400;500&family=Righteous&family=Roboto:wght@400;500;700;900&display=swap');
+.Navbar{ 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Dela Gothic One', cursive;    
+}
+.logo{
+    color:#990DCE ;
+    font-size:  3em !important;
+    margin-right: 2.6em !important;
+    display: flex;
+}
+.logo:hover{
+    cursor:default;
+}
+.Navbar ul{
+    color: black;
+    background-color: #2FDD41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 7.6em;
+    width:70%;
+    min-width: 1324px;
+    
+}
+.Navbar ul li{
+    font-size: 1.8125em;
+    margin: 1em;
+    display: flex;
+}
+.Navbar ul li:hover{
+    color: #990DCE;
+}
+
+
+
