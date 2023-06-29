@@ -4,7 +4,16 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    font-family: 'Dela Gothic One', cursive;    
+    font-family: 'Dela Gothic One', cursive;
+    margin:0;  
+    
+}
+.Navbar a{
+    text-decoration: none; 
+    color: black;
+}
+.Navbar a:hover{
+    color: #990DCE;
 }
 .logo{
     color:#990DCE ;
@@ -34,9 +43,7 @@
     margin: 1em;
     display: flex;
 }
-.Navbar ul li:hover{
-    color: #990DCE;
-}
+
 
 
 
