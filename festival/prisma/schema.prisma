@@ -21,10 +21,10 @@ model Ingresso {
   idTipo     Int
   idUser     Int
   user       User @relation(fields: [idUser], references: [idUser])
-  tipo       tipo @relation(fields: [idTipo], references: [idTipo])
+  tipo       Tipo @relation(fields: [idTipo], references: [idTipo])
 }
 
-model tipo {
+model Tipo {
   idTipo   Int        @id @default(autoincrement())
   nome     String
   preco    Float
