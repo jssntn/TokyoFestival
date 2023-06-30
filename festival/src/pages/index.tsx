@@ -6,6 +6,7 @@ import Navbar from '@/components/navbar/navbar'
 import Footer from '@/components/footer/footer'
 import Link from 'next/link';
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

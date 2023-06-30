@@ -1,0 +1,8 @@
+html,body{
+    min-height: 100%;
+    background-image: url('../img/Fundo.svg');
+    background-position: center;
+    background-size: 200%;
+    margin: 0;
+    box-sizing: border-box;
+}
