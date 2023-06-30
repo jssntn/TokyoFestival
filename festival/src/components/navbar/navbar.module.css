@@ -26,7 +26,7 @@
 }
 .Navbar ul{
     color: black;
-    background-color: #2FDD41;
+    background-color: #2FDD41;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,10 +39,12 @@
     
 }
 .Navbar ul li{
+    
     font-size: 1.8125em;
     margin: 1em;
     display: flex;
 }
+
 
 
 
