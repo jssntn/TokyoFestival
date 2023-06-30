@@ -1,19 +1,23 @@
 export interface User{
-    id: number,
-    nome: string,
-    idade: number,
+    idUser: number,
+    name: string,
+    age: number,
     email: string
 }
 
 export interface Ingresso{
-    id: number,
+    idIngresso: number,
     idUser: number,
     idTipo: number
 }
 
 export interface TipoIngresso{
-    id: number,
+    idTipo: number,
     descricao: string,
     preco: number
 }
 
+export interface IngressosProps{
+    User: User,
+    TipoIngresso: TipoIngresso
+}

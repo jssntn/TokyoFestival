@@ -4,12 +4,32 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/navbar/navbar'
 import Footer from '@/components/footer/footer'
+import { Ingresso, IngressosProps } from '@/interfaces/interfaces'
+import axios from 'axios'
+import TipoIngresso from '@/components/tipoIngresso/tipoIngresso'
 import Link from 'next/link';
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  //Constantes para teste
+  const Julia = {
+    idUser: 1,
+    name: "Julia",
+    age: 21,
+    email: "emailteste",
+  };
+
+  const tipoIngresso = {
+    idTipo: 1,
+    descricao:"camarote",
+    preco: 350.5
+  }
+  //fim constantes para teste
+
+
   return (
     <>
       <Navbar />
@@ -19,6 +39,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+      {/* testes venda ingresso */}
+      <TipoIngresso User={Julia} TipoIngresso={tipoIngresso} />
+      <TipoIngresso User={Julia} TipoIngresso={tipoIngresso} />
+      <TipoIngresso User={Julia} TipoIngresso={tipoIngresso} />
       <Footer/>
     </>
     

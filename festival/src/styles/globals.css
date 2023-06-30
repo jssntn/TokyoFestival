@@ -1,8 +1,9 @@
 html,body{
     min-height: 100%;
     background-image: url('../img/Fundo.svg');
+    background-repeat: repeat-y;
     background-position: center;
-    background-size: 200%;
+    background-size: 250%;
     margin: 0;
     box-sizing: border-box;
 }
