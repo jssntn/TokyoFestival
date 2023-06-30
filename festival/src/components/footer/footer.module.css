@@ -26,6 +26,9 @@
     font-size: 1.8125em;
     font-family: 'Dela Gothic One', cursive;
 }
+.content h3:hover{
+    cursor:default
+}
 .content a{
     text-decoration: none;
     color: black;
@@ -53,4 +56,7 @@
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 1.25em;
 
+}
+.footerBottom p:hover{
+    cursor:default;
 }
