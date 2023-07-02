@@ -1,0 +1,61 @@
+.header{
+    width: 90rem;
+    height: 8rem;
+    display: flex;
+
+    background-color: #2FDD41;
+
+}
+
+.header div {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dela Gothic One', cursive;
+    color: #990DCE;
+    width: 20rem;
+    font-size: 1.5rem;
+}
+
+.Navbar{ 
+    display: flex;
+    width: 80rem;
+    height:inherit;
+    justify-content: center;
+    font-family: 'Dela Gothic One', cursive;
+}
+.Navbar a{
+    text-decoration: none; 
+    color: black;
+}
+.Navbar a:hover{
+    color: #990DCE;
+}
+.logo{
+    color:#990DCE ;
+    font-size:  3em ;
+    
+    display: flex;
+}
+.logo:hover{
+    cursor:default;
+}
+.Navbar ul{
+    width: 20%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+    align-items: center;
+    list-style: none;
+    font-weight: 700;
+    
+    /*min-width: 1324px;*/
+    
+}
+.Navbar ul li{
+    font-size: 2rem;
+    
+    display: flex;
+}
