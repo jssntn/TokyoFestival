@@ -24,6 +24,17 @@ export default {
               } 
                 return res.status(500).json({ message: "unknown error" });
         }
+    },
+    async getTipos(req: NextApiRequest, res: NextApiResponse){
+        try{
+            const tipos = await ticketService.getTipos();
+            return res.status(200).json(tipos);
+        }catch(error){
+            if (error instanceof Error) {
+                return res.status(400).json({ message: error.message });
+              } 
+                return res.status(500).json({ message: "unknown error" });
+        }
     }
     
 }

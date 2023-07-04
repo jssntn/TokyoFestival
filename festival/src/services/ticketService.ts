@@ -68,6 +68,11 @@ class TicketService{
         return tickets;
     }
 
+    public async getTipos(): Promise<Tipo[] | null> {
+        const tipos = await prisma.tipo.findMany();
+        return tipos;
+    }
+
 }
 
 export default new TicketService();
