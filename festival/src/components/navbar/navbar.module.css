@@ -3,6 +3,7 @@
 .Navbar{ 
     display: flex;
     width: 100%;
+    /* height: 5%; */
     justify-content: center;
     font-family: 'Dela Gothic One', cursive;
     margin:0;  
@@ -17,35 +18,40 @@
 }
 .logo{
     color:#990DCE ;
-    font-size:  3em !important;
-    margin-right: 2.6em !important;
+    font-size: 5em !important;
+    /* margin-right: 2.6em !important; */
     display: flex;
+    width: 18%;
 }
 .logo:hover{
     cursor:default;
 }
 .Navbar ul{
     color: black;
-    background-color: #2FDD41;    
+    background-color: #2FDD41;
     display: flex;
-    justify-content: center;
+    
+    justify-content: flex-start;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 7.6em;
-    width:70%;
-    min-width: 1324px;
+    width:69%;
+    height: 12em;
+
+    /* width: 1290px;
+    height: 123px;; */
+    
+
+
+    /* min-width: ; */
     
 }
 .Navbar ul li{
-    
-    font-size: 1.8125em;
-    margin: 1em;
+    font-size: 2.8em;
+    margin:  0 1em 0 1em;
     display: flex;
 }
-
-
 
 
 

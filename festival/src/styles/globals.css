@@ -14,7 +14,8 @@ html {
     background-image: url('../../public/img/Fundo.svg');
     background-repeat: repeat-y;
     background-position: center;
-    background-size: 250%;
+    background-size: 200%;
+    cursor: default;
 }
 
 

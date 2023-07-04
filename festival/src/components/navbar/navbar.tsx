@@ -2,11 +2,8 @@ import styles from './navbar.module.css';
 import Link from 'next/link';
 
 
-
 function Navbar(){
     return (
-        <>
-        
         <nav className={styles.Navbar}>
           <ul>
           <li className={styles.logo}>
@@ -39,8 +36,6 @@ function Navbar(){
             </li>
           </ul>
         </nav>
-        
-        </>
       );
 }
 export default Navbar;

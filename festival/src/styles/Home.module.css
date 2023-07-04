@@ -89,7 +89,26 @@
     margin-top: 5rem;
     column-gap: 9rem;
 }
+.sobreNosTitle{
+    display: flex;
+    font-size: 26px;
+    width: 100%;
+    overflow: hidden;
+}
+.sobreNosTitle h1{
+    -webkit-text-stroke: 0.1px #2FDD41;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    font-size: 1.96em;
+}
+.span{
+    font-size: 1.96em;
+    -webkit-text-stroke: 0;
+    -webkit-text-fill-color: #2FDD41;
+    color:#2FDD41;
+    white-space: nowrap;
 
+}
 .sobreNosText {
     width: 42%;
     height: 100%;

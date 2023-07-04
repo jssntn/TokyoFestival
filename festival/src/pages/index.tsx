@@ -14,20 +14,29 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  //Constantes para teste
-  const Julia = {
-    idUser: 1,
-    name: "Julia",
-    age: 21,
-    email: "emailteste",
-  };
+// const repeatText = (text:string) => {
+//   let screenWidth = screen.width;
+//   let textWidth = text.length*8;
+//   let repetitions = Math.ceil(screenWidth/textWidth);
 
-  const tipoIngresso = {
-    idTipo: 1,
-    descricao:"camarote",
-    preco: 350.5
+//   let repeatText = Array(repetitions).fill(text);
+  
+//   return repeatText;
+
+// }
+const repeatText = (text: string) => {
+  let screenWidth;
+  if (typeof window !== "undefined") {
+    screenWidth = screen.width;
   }
-  //fim constantes para teste
+  let textWidth = text.length * 8;
+  let repetitions = 10;
+
+  let repeatedText = Array(repetitions).fill(text);
+
+  return repeatedText;
+};
+
 
 
   return (
@@ -43,7 +52,7 @@ export default function Home() {
 
       {/* Primeira seção */}
       <div className='background-container'>
-            <Navbar />
+            
         <section className='main-container'>
           <div className={styles.imgContainer}>
             <Image src="/img/japoneseTextBackground.svg" alt="Imagem de fundo de um texto em japonês" width={1000} height={300}/>
@@ -65,8 +74,25 @@ export default function Home() {
 
       {/* Seção Sobre Nós */}
       <div className='background-container'>
+      <div className={styles.sobreNosTitle}>
+         {
+            repeatText('SOBRE NÓS ').map((text, index) => {
+              if(index==1){
+                return <span className={styles.span}>{text}</span>
+              }
+              else if(index ==0){
+                let parts = text.split("R");
+                return <h1>{parts[1]}</h1>
+              }
+              else{
+                return <h1>{text}</h1>
+              }
+            })
+          }
+          </div>
         <section className='main-container'>
-          <h1 id='sobreNosTitle' className='title'>SOBRE NÓS</h1>
+          {/* <h1 id='sobreNosTitle' className='title'>SOBRE NÓS</h1> */}
+         
           <div className={styles.sobreNosContainerBox}>
             <div className={styles.sobreNosText}>
               <h2>Meltdow Fusion Tokyo</h2>
