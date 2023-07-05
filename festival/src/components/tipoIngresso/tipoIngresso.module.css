@@ -6,6 +6,7 @@
 
 }
 .Container{
+    font-size: 16px;
     width:72%;
     display: flex;
     flex-direction: column;
@@ -15,6 +16,7 @@
     color: white;
     /* para testes */
     margin-top:100px; 
+    height: 34em;
 }
 .Content{
     display: flex;
@@ -27,14 +29,15 @@
     width: 50%;
     font-size: 1.25em;
     display: flex;
+    gap:2em;
     flex-direction:column;
     align-items: center;
-    
+
 }
 .Content .Description .mainContent{
    font-size: 1.5em; 
    margin-bottom:0;
-   
+
 }
 .Content p{
     font-family: 'PT Sans Caption', sans-serif;
@@ -44,13 +47,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 .Price h2{
     margin:0 0 1em 0;
     font-size: 4.5em !important;
     margin: 0 !important;
-    
+
 }
 
 .Container h2{

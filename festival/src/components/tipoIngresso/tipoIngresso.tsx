@@ -25,7 +25,7 @@ function TipoIngresso(props:IngressosProps){
     return(
         <div className={styles.Wrapper}>
             <div className={styles.Container}>
-                <h2>{props.TipoIngresso.descricao.toUpperCase()}<span>{props.TipoIngresso.descricao.toUpperCase()}</span>{props.TipoIngresso.descricao.toUpperCase()}</h2>
+            {props.TipoIngresso.descricao? <h2> {props.TipoIngresso.descricao.toUpperCase()} <span>{props.TipoIngresso.descricao.toUpperCase()}</span>{props.TipoIngresso.descricao.toUpperCase()}</h2>: "Carregando..."}
                 <div className={styles.Content}>
                     <div className={styles.Description}>
                         <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. </p>
@@ -35,7 +35,7 @@ function TipoIngresso(props:IngressosProps){
                         <h2>R${props.TipoIngresso.preco.toFixed(2)}</h2>
                     </div>
                 </div>
-                <button className={styles.Button} onClick={vendeIngresso}>COMPRAR INGRESSO {props.TipoIngresso.descricao.toLocaleUpperCase()}</button>
+                <button className={styles.Button} onClick={vendeIngresso}>COMPRAR INGRESSO {props.TipoIngresso.descricao? props.TipoIngresso.descricao.toUpperCase(): "Carregando()"}</button>
             </div>
         </div>
     );

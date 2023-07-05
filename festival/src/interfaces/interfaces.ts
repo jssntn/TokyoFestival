@@ -11,7 +11,7 @@ export interface Ingresso{
     idTipo: number
 }
 
-export interface TipoIngresso{
+export interface iTipoIngresso{
     idTipo: number,
     descricao: string,
     preco: number
@@ -19,5 +19,5 @@ export interface TipoIngresso{
 
 export interface IngressosProps{
     User: User,
-    TipoIngresso: TipoIngresso
+    TipoIngresso: iTipoIngresso
 }

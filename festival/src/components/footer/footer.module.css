@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;700&family=Dela+Gothic+One&family=Josefin+Sans:wght@600&family=Lobster&family=Oooh+Baby&family=Overpass:wght@400;500&family=PT+Sans+Caption&family=Righteous&family=Roboto:wght@400;500;700;900&display=swap');
 .footer{
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 23.0625em;
+    padding: 2em 0 2em 0;
     width: 100%;
     background-color: #2FDD41;
     margin-top:7em;
@@ -12,8 +13,8 @@
 
 .content{
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    width: 45%;
 }
 
 .content ul{
@@ -25,6 +26,7 @@
 .content h3{
     font-size: 1.8125em;
     font-family: 'Dela Gothic One', cursive;
+    margin-bottom: 0.5em;
 }
 .content h3:hover{
     cursor:default
@@ -44,17 +46,18 @@
 }
 
 .footer hr{
-    width: 80%;
+    width: 50%;
     color:blueviolet;
     border: 1px solid #990DCE;
 }
 
 .footerBottom{
-    width: 74%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 1.25em;
+    margin-top: 1em;
 
 }
 .footerBottom p:hover{

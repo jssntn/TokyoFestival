@@ -91,8 +91,6 @@ const repeatText = (text: string) => {
           }
           </div>
         <section className='main-container'>
-          {/* <h1 id='sobreNosTitle' className='title'>SOBRE NÓS</h1> */}
-         
           <div className={styles.sobreNosContainerBox}>
             <div className={styles.sobreNosText}>
               <h2>Meltdow Fusion Tokyo</h2>
