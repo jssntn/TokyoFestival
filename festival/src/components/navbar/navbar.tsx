@@ -20,7 +20,7 @@ function Navbar(){
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/ingressos">
                 Ingressos
               </Link>
             </li>

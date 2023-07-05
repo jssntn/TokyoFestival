@@ -103,6 +103,7 @@ const repeatText = (text: string) => {
           </div>
         </section>
       </div>
+      <Footer />
     </>
 
   )

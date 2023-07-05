@@ -8,15 +8,18 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
+    /* min-height extremamente importante, favor não editar */
+    min-height: 100%; 
     font-size: 62.5%;
     font-family: 'Dela Gothic One', sans-serif;
     background-image: url('../../public/img/Fundo.svg');
     background-repeat: repeat-y;
-    background-position: center;
+    background-position: center bottom;
     background-size: 200%;
     cursor: default;
 }
+
 
 
 

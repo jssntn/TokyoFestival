@@ -3,7 +3,7 @@ import { Prisma } from "@prisma/client";
 import { useState } from "react";
 
 const prisma = new PrismaClient();
-const qtdIngressos = 4; //Define a quantidade total de ingressos a serem vendidos
+const qtdIngressos = 9; //Define a quantidade total de ingressos a serem vendidos
 //Podemos definir constantes diferentes pra cada tipo de ingresso e incluir um switch dentro da funcao de verificacao de disponibilidade
 
 

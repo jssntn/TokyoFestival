@@ -40,9 +40,9 @@ export default function Ingressos(){
         fetchTipoIngresso();
     });
     return ( 
-    <>
+    <div className={styles.Wrapper}>
     <Navbar></Navbar>
-    <section className = {styles.cards}>
+    <section className = {styles.cards} >
         {
             tipo.map((tipo) => {
                 return <TipoIngresso User={User as User} TipoIngresso={tipo as iTipoIngresso}></TipoIngresso>
@@ -50,7 +50,7 @@ export default function Ingressos(){
         }
     </section>
     <Footer/>
-    </>
+    </div>
     
     )
 }
