@@ -1,6 +1,7 @@
 import { PrismaClient, User, Ingresso, Tipo } from "@prisma/client";
 import { Prisma } from "@prisma/client";
 
+
 const prisma = new PrismaClient();
 
 class UserService {
@@ -45,7 +46,9 @@ class UserService {
         const user = await prisma.user.findFirst({
             where: {
                 email: email
-            }
+            }, include: {
+                ingresso: true,
+            }          
         });
         return user;
     }
@@ -56,9 +59,9 @@ class UserService {
         const user = await prisma.user.findFirst({
             where: {
                 email: email,
-                password: senha
             }
         });
+        
         return user;
     }
 
