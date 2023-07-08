@@ -1,0 +1,70 @@
+:root{
+    --standard-width: 100rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    /* min-height extremamente importante, favor não editar */
+    min-height: 100%; 
+    font-size: 62.5%;
+    font-family: 'Dela Gothic One', sans-serif;
+    background-image: url('../../public/img/Fundo.svg');
+    background-repeat: repeat-y;
+    background-position: center bottom;
+    background-size: 200%;
+    cursor: default;
+}
+
+
+
+
+.background-container {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    width: var(--standard-width);
+    height: 35rem;
+
+}
+
+.relativeBox{
+    min-width: 100vw;
+    height: 10rem;
+    align-self: flex-start;
+    margin-left: 50px;
+    background-color: red;
+    display: flex;
+}
+
+
+.title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #2FDD41;
+    margin-left: 5rem;
+    position: relative;
+}
+
+.title::before{
+    position: absolute;
+    content: '---------------';
+    left: -22rem;
+}
+
+.title::after{
+    position: absolute;
+    content: '-------------------------------------------------------------';
+    right: -15rem;
+}
+
+

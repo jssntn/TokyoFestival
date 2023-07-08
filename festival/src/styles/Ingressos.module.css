@@ -1,0 +1,16 @@
+
+.Wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:22em;
+    
+    /* padding-bottom: 30em; */
+}
+.cards{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap:12em;
+    margin-bottom: 6em;
+    
+}

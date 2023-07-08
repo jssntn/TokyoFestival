@@ -1,0 +1,147 @@
+
+
+.header {
+    max-width: 100rem;
+    height: 8rem;
+}
+
+.imgContainer {
+    margin-top: 10rem;
+    position: relative;
+    font-family: 'Dela Gothic One', sans-serif;
+    color: #F5F5F5;
+    margin-bottom: 4rem;
+}
+
+.imgContainer h3 {
+    position: absolute;
+    top: 11%;
+    left: 26%;
+    font-size: 5rem;
+    border-radius: 3rem;
+    font-weight: 900;
+    z-index: 2;
+    border: none;
+}
+
+.imgContainer h1 {
+    position: absolute;
+    top: 18%;
+    left: 18.5%;
+    font-size: 16rem;
+    font-weight: 900;
+    border-radius: 3rem;
+    border: none;
+    z-index: 2;
+    /*box-shadow: 0px 0px 80px 40px black;*/
+}
+
+.bottomContent{
+    display: flex;
+    column-gap: 26rem;
+    color: #F5F5F5;
+}
+
+.bottomContent h3 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-left: 5rem;
+}
+
+.buyButton{
+    display: flex;
+    width: 29rem;
+    height: 4rem;
+    background-color: #990DCE;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+}
+
+.buyButton a {
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-family: 'Dela Gothic One', sans-serif;
+    border: none;
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+.bShadow {
+    position: absolute;
+    top: 13%;
+    left: 18.5%;
+    background-color: black;
+    width: 65rem;
+    height: 24rem;
+    opacity: 0.4;
+    z-index: 1;
+    border-radius: 8rem;
+    box-shadow: 0px 0px 30px 30px black;
+}
+
+.sobreNosContainerBox {
+    display: flex;
+    width: inherit;
+    height: 35rem;
+    margin-top: 5rem;
+    column-gap: 9rem;
+}
+.sobreNosTitle{
+    display: flex;
+    font-size: 26px;
+    width: 100%;
+    overflow: hidden;
+}
+.sobreNosTitle h1{
+    -webkit-text-stroke: 0.1px #2FDD41;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    font-size: 1.96em;
+}
+.span{
+    font-size: 1.96em;
+    -webkit-text-stroke: 0;
+    -webkit-text-fill-color: #2FDD41;
+    color:#2FDD41;
+    white-space: nowrap;
+
+}
+.sobreNosText {
+    width: 42%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.2rem;
+}
+.sobreNosText h2 {
+    font-size: 2.7rem;
+    font-weight: 900;
+    color: #2FDD41;
+}
+
+.sobreNosText p {
+    display: block;
+    width: 33rem;
+    color: #F5F5F5;
+    font-size: 2rem;
+}
+
+.sobreNosImageContainer{
+    position: relative;
+    height: inherit;
+    width: 401px;
+}
+
+.layer {
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+}
+
+
+
