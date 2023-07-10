@@ -73,13 +73,13 @@
     position: absolute;
     top: 13%;
     left: 18.5%;
-    background-color: black;
+    background-color: #1E1E1E;
     width: 65rem;
     height: 24rem;
-    opacity: 0.4;
+    opacity: 0.7;
     z-index: 1;
     border-radius: 8rem;
-    box-shadow: 0px 0px 30px 30px black;
+    box-shadow: 0px 0px 30px 30px #1E1E1E;
 }
 
 .sobreNosContainerBox {
