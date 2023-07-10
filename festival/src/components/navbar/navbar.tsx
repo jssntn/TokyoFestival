@@ -4,13 +4,12 @@ import Link from 'next/link';
 
 function Navbar(){
     return (
-      <header className={styles.header}>
-        <div>
-          <h1>東京都</h1>
-        </div>
         <nav className={styles.Navbar}>
           <ul>
-            <li>
+          <li className={styles.logo}>
+                東京都
+            </li>
+          <li>
               <Link href="/">
                 Início
               </Link>
@@ -21,7 +20,7 @@ function Navbar(){
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/ingressos">
                 Ingressos
               </Link>
             </li>
@@ -30,14 +29,13 @@ function Navbar(){
                 Cadastro
               </Link>
             </li>
-              <li>
+            <li>
               <Link href="/about">
                 Login
               </Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+            </li>
+          </ul>
+        </nav>
       );
 }
 export default Navbar;

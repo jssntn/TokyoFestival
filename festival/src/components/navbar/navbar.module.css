@@ -1,29 +1,14 @@
-.header{
-    width: 90rem;
-    height: 8rem;
-    display: flex;
 
-    background-color: #2FDD41;
-
-}
-
-.header div {
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Dela Gothic One', cursive;
-    color: #990DCE;
-    width: 20rem;
-    font-size: 1.5rem;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;700&family=Dela+Gothic+One&family=Josefin+Sans:wght@600&family=Lobster&family=Oooh+Baby&family=Overpass:wght@400;500&family=Righteous&family=Roboto:wght@400;500;700;900&display=swap');
 .Navbar{ 
+    font-size: 16px;;
     display: flex;
-    width: 80rem;
-    height:inherit;
+    width: 100%;
+    /* height: 5%; */
     justify-content: center;
     font-family: 'Dela Gothic One', cursive;
+    margin:0;  
+    
 }
 .Navbar a{
     text-decoration: none; 
@@ -34,28 +19,39 @@
 }
 .logo{
     color:#990DCE ;
-    font-size:  3em ;
-    
+    font-size: 3.125em!important;
+    /* margin-right: 2.6em !important; */
     display: flex;
+    width: 18%;
 }
 .logo:hover{
     cursor:default;
 }
 .Navbar ul{
-    width: 20%;
     color: black;
+    background-color: #2FDD41;
     display: flex;
-    justify-content: center;
-    column-gap: 5rem;
+    
+    justify-content: flex-start;
     align-items: center;
     list-style: none;
-    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    width:69%;
+    height: 7.6875em;
+
+    /* width: 1290px;
+    height: 123px;; */
     
-    /*min-width: 1324px;*/
+
+
+    /* min-width: ; */
     
 }
 .Navbar ul li{
-    font-size: 2rem;
-    
+    font-size: 1.8125em;
+    margin:  0 1em 0 1em;
     display: flex;
 }
+
+

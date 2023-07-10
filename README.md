@@ -1,4 +1,4 @@
-# TokyoFestival
+# Meltdown fusion tokyo
 projeto final do processo de avaliação de trainees da InfoJr - 2023.1
 
 ### escopo do projeto: https://docs.google.com/document/d/1r92NZUbdDu_vIcLGTRkX1Jx2wFPtr6Bv7MSbieAJjZk/edit

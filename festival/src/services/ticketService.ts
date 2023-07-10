@@ -3,8 +3,8 @@ import { Prisma } from "@prisma/client";
 import { useState } from "react";
 
 const prisma = new PrismaClient();
-const qtdIngressos = 4; //Define a quantidade total de ingressos a serem vendidos
-
+const qtdIngressos = 9; //Define a quantidade total de ingressos a serem vendidos
+//Podemos definir constantes diferentes pra cada tipo de ingresso e incluir um switch dentro da funcao de verificacao de disponibilidade
 
 
 
@@ -18,6 +18,14 @@ class TicketService{
             },
           })).shift()?.idIngresso;
         if((lastRecord as number) < qtdIngressos){
+            return true;
+        }
+        return false;
+    }
+
+    public async verificaDisponibilidadeTipo(idTipo:number){
+        const lastRecord = (await this.getTicketsByType(idTipo))?.length;
+        if((lastRecord as number) < qtdIngressos){ //editar constante qtdIngressos
             return true;
         }
         return false;
@@ -58,6 +66,11 @@ class TicketService{
             }
         });
         return tickets;
+    }
+
+    public async getTipos(): Promise<Tipo[] | null> {
+        const tipos = await prisma.tipo.findMany();
+        return tipos;
     }
 
 }
