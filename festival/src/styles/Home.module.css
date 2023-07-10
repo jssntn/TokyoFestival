@@ -89,18 +89,7 @@
     margin-top: 5rem;
     column-gap: 9rem;
 }
-.sobreNosTitle{
-    display: flex;
-    font-size: 26px;
-    width: 100%;
-    overflow: hidden;
-}
-.sobreNosTitle h1{
-    -webkit-text-stroke: 0.1px #2FDD41;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
-    font-size: 1.96em;
-}
+
 .span{
     font-size: 1.96em;
     -webkit-text-stroke: 0;
@@ -112,7 +101,6 @@
 .sobreNosText {
     width: 42%;
     height: 100%;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,5 +131,65 @@
     bottom: -33px;
 }
 
+.sectionTitle{
+    display: flex;
+    font-size: 26px;
+    width: 100%;
+    overflow: hidden;
+}
+.sectionTitle h1{
+    -webkit-text-stroke: 0.1px #2FDD41;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    font-size: 1.96em;
+}
+
+.photoSectionBox {
+    max-width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    display: flex;
+    column-gap: 7rem;
+    margin-left: 3rem;
+}
+
+.pAtracoesButtonBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9rem 3rem;
+    width: 30rem;
+    height: 6rem;
+    background-color: hsl(284, 88%, 43%);
+}
 
 
+.pAtracoesButtonBox a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #F5F5F5;
+}
+
+.ingressoSectionBox {
+    display: flex;
+    margin-top: 5rem;
+    column-gap: 7rem;
+    margin-left: 3rem;
+}
+
+.ingressosButtonBox {
+    width: 45%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #990DCE;
+    margin: 5rem 25rem;
+}
+
+.ingressosButtonBox a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #F5F5F5;
+
+}

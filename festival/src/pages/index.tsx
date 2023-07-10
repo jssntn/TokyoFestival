@@ -8,6 +8,8 @@ import { Ingresso, IngressosProps } from '@/interfaces/interfaces'
 import axios from 'axios'
 import TipoIngresso from '@/components/tipoIngresso/tipoIngresso'
 import Link from 'next/link';
+import PhotoCard from '../components/photoCard/photoCard'
+import HomeIngressoCard from '@/components/homeIngressoCard/homeIngressoCard'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -74,7 +76,7 @@ const repeatText = (text: string) => {
 
       {/* Seção Sobre Nós */}
       <div className='background-container'>
-      <div className={styles.sobreNosTitle}>
+        <div className={styles.sectionTitle}>
          {
             repeatText('SOBRE NÓS ').map((text, index) => {
               if(index==1){
@@ -103,6 +105,71 @@ const repeatText = (text: string) => {
           </div>
         </section>
       </div>
+
+      {/*Seção Principais Atrações*/}
+      <div className='background-container'>
+        <div className={styles.sectionTitle}>
+          {
+              repeatText('PRINCIPAIS ATRAÇÕES ').map((text, index) => {
+                if(index==1){
+                  return <span className={styles.span}>{text}</span>
+                }
+                else if(index ==0){
+                  let parts = text.split("P");
+                  return <h1>{parts[1]}</h1>
+                }
+                else{
+                  return <h1>{text}</h1>
+                }
+              })
+            }
+        </div>
+        <section className='main-container'>
+            <div className={styles.photoSectionBox}>
+              <PhotoCard caminho='/img/cardImage1.svg' nome='MARCUS RHIEL'/>
+              <PhotoCard caminho='/img/cardImage2.svg' nome='DULCE AMINOFF'/>
+              <PhotoCard caminho='/img/cardImage3.svg' nome='RAYNA STANTON'/>
+            </div>
+            <div className={styles.pAtracoesButtonBox}>
+              <Link className={styles.pAtracoesButton} href='/' legacyBehavior>
+                <a>MOSTRAR TODOS <span style={{marginLeft:'1rem'}}>&rarr;</span></a>
+                </Link>
+            </div>
+        </section>
+      </div>
+      
+      {/*Seção Principais Atrações*/}
+      <div className='background-container'>
+        <div className={styles.sectionTitle}>
+          {
+              repeatText('INGRESSOS ').map((text, index) => {
+                if(index==1){
+                  return <span className={styles.span}>{text}</span>
+                }
+                else if(index == 0){
+                  let parts = text.split("E");
+                  return <h1>{parts[1]}</h1>
+                }
+                else{
+                  return <h1>{text}</h1>
+                }
+              })
+            }
+          </div>
+          <div className="main-container">
+            <div className={styles.ingressoSectionBox}>
+              <HomeIngressoCard tipo='PISTA' preco={99.90}/>
+              <HomeIngressoCard tipo='VIP' preco={199.90}/>
+              <HomeIngressoCard tipo='CAMAROTE' preco={399.90}/>
+            </div>
+            <div className={styles.ingressosButtonBox}>
+              <Link className={styles.ingressosButton} href='/' legacyBehavior>
+                <a>QUERO GARANTIR MEU INGRESSO</a>
+                </Link>
+            </div>
+          </div>
+        </div>
+      
       <Footer />
     </>
 
