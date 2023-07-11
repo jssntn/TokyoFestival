@@ -22,3 +22,13 @@ export interface IngressosProps{
     User: User,
     TipoIngresso: iTipoIngresso
 }
+
+export interface CardProps {
+    caminho: string,
+    nome: string,
+}
+
+export interface HomeIngressoProps {
+    tipo:string,
+    preco:number
+}
