@@ -25,12 +25,12 @@ function Navbar(){
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/cadastro">
                 Cadastro
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/login">
                 Login
               </Link>
             </li>
