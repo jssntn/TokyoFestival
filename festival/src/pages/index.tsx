@@ -54,7 +54,6 @@ const repeatText = (text: string) => {
 
       {/* Primeira seção */}
       <div className='background-container'>
-            
         <section className='main-container'>
           <div className={styles.imgContainer}>
             <Image src="/img/japoneseTextBackground.svg" alt="Imagem de fundo de um texto em japonês" width={1000} height={300}/>
@@ -126,9 +125,9 @@ const repeatText = (text: string) => {
         </div>
         <section className='main-container'>
             <div className={styles.photoSectionBox}>
-              <PhotoCard caminho='/img/cardImage1.svg' nome='MARCUS RHIEL'/>
-              <PhotoCard caminho='/img/cardImage2.svg' nome='DULCE AMINOFF'/>
-              <PhotoCard caminho='/img/cardImage3.svg' nome='RAYNA STANTON'/>
+              <PhotoCard caminho='/img/cardImage1.svg' nome='MARCUS RHIEL' tipo={false}/>
+              <PhotoCard caminho='/img/cardImage2.svg' nome='DULCE AMINOFF' tipo={false}/>
+              <PhotoCard caminho='/img/cardImage3.svg' nome='RAYNA STANTON' tipo={false}/>
             </div>
             <div className={styles.pAtracoesButtonBox}>
               <Link className={styles.pAtracoesButton} href='/' legacyBehavior>
