@@ -66,7 +66,7 @@ const repeatText = (text: string) => {
           <div className={styles.bottomContent}>
             <h3>23/08/23 - 25/08/23</h3>
             <div className={styles.buyButton}>
-            <Link href='/' legacyBehavior>
+            <Link href='/ingressos' legacyBehavior>
               <a>Compre o ingresso</a>
               </Link>
             </div>
@@ -83,7 +83,7 @@ const repeatText = (text: string) => {
                 return <span className={styles.span}>{text}</span>
               }
               else if(index ==0){
-                let parts = text.split("R");
+                let parts = text.split("O");
                 return <h1>{parts[1]}</h1>
               }
               else{
@@ -97,9 +97,9 @@ const repeatText = (text: string) => {
             <div className={styles.sobreNosText}>
               <h2>Meltdow Fusion Tokyo</h2>
               <p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-              <Image src='/img/sobreNosJaponeseImage.svg' alt='Imagem de texto em japonês' width={330} height={330}/>
+              <Image src='/img/sobreNosJaponeseImage.svg' alt='Imagem de texto em japonês' width={450} height={126}/>
             </div>
-            <div className={styles.sobreNosImageContainer}><Image src='/img/sobreNosImage.svg' alt='Imagem de um show ao vivo' width={400} height={400}/>
+            <div className={styles.sobreNosImageContainer}><Image src='/img/sobreNosImage.svg' alt='Imagem de um show ao vivo' width={653} height={544}/>
             <Image className={styles.layer} src='/img/Layer.svg' alt='Imagem de um show ao vivo' width={400} height={60}/>
             </div>
           </div>
