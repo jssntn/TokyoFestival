@@ -7,7 +7,7 @@ function PhotoCard(props:CardProps){
     return(
         <>
             <div className={styles.photoBox}>
-                <Image src={props.caminho} alt='Imagem do artista' width={250} height={350}/>
+                <Image src={props.caminho} alt='Imagem do artista' width={376} height={556}/>
                 <div className={styles.nomePhotoBox}>
                     <h2>{props.nome}</h2>
                 </div>

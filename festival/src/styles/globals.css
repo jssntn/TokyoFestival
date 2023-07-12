@@ -1,6 +1,10 @@
 :root{
     --standard-width: 100rem;
 }
+div,section, form{
+    background-color: transparent;
+}
+
 
 *{
     margin: 0;

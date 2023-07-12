@@ -110,16 +110,16 @@ const repeatText = (text: string) => {
       <div className='background-container'>
         <div className={styles.sectionTitle}>
           {
-              repeatText('PRINCIPAIS ATRAÇÕES ').map((text, index) => {
+              repeatText('PRINCIPAISATRAÇÕES').map((text, index) => {
                 if(index==1){
                   return <span className={styles.span}>{text}</span>
                 }
                 else if(index ==0){
-                  let parts = text.split("P");
-                  return <h1>{parts[1]}</h1>
+                  let parts = text.split("A");
+                  return <h1>{parts[2]+"A"+parts[3]}</h1>
                 }
                 else{
-                  return <h1>{text}</h1>
+                  return <h1>{text} </h1>
                 }
               })
             }
@@ -132,13 +132,13 @@ const repeatText = (text: string) => {
             </div>
             <div className={styles.pAtracoesButtonBox}>
               <Link className={styles.pAtracoesButton} href='/' legacyBehavior>
-                <a>MOSTRAR TODOS <span style={{marginLeft:'1rem'}}>&rarr;</span></a>
+                <a>MOSTRAR TODOS <span>&rarr;</span></a>
                 </Link>
             </div>
         </section>
       </div>
       
-      {/*Seção Principais Atrações*/}
+      {/*Seção Ingressos*/}
       <div className='background-container'>
         <div className={styles.sectionTitle}>
           {
