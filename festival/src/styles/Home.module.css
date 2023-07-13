@@ -215,7 +215,7 @@
 
 /* SEÇÃO FOTOS */
 
-.Wrapper{
+.WrapperFotos{
     display: flex;
     justify-content: center;
     margin: 20em 0 20em 0;
@@ -262,3 +262,37 @@
     margin-top: 5em;
 }
 
+/* SEÇÃO CONTATO */
+
+.contatoWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 9em 0 20em 0;
+    gap:17em;
+}
+
+.contatoInfos{
+    font-size: 16px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:4em;
+    width: 25%;
+    height: 100%;
+}
+
+.contatoInfos div{
+    display: flex;
+    max-width: 85%;
+}
+
+.contatoInfos p{
+    font-size: 1.25em;
+    font-family: 'PT Sans Caption', sans-serif;
+    align-self: self-end;
+}
+
+.contatoIcon{
+    margin-right:1em;
+}

@@ -171,7 +171,7 @@ const repeatText = (text: string) => {
       </div>
 
        {/*Seção fotos*/}
-       
+
         <div className={styles.sectionTitle}>
           {
               repeatText('FOTOS ').map((text, index) => {
@@ -185,7 +185,7 @@ const repeatText = (text: string) => {
             }
           </div>
 
-        <div className={styles.Wrapper}>
+        <div className={styles.WrapperFotos}>
           <div className={styles.fotosContainer}>
             <Image src='/img/eventoImg1.svg' alt="Imagem do evento" width={848} height={486} />
             <Image src='/img/eventoImg2.svg' alt="Imagem do evento" width={848} height={486} />
@@ -212,6 +212,48 @@ const repeatText = (text: string) => {
               <h2>horas</h2>
             </div>
           </div>
+        </div>
+
+        {/* Seção Contato */}
+
+        <div className={styles.sectionTitle}>
+          {
+              repeatText('CONTATO ').map((text, index) => {
+                if(index==1){
+                  return <span className={styles.span}>{text}</span>
+                }
+                // else if(index == 0){
+                //   let parts = text.split("C");
+                //   return <h1>{parts[1]}</h1>
+                // }
+                else{
+                  return <h1>{text}</h1>
+                }
+              })
+            }
+          </div>
+
+        <div className={styles.contatoWrapper}>
+            <div className={styles.contatoInfos}>
+
+              <div>
+              <Image className={styles.contatoIcon} src='/img/contatoIcons/endereco.svg' alt='icone endereço' width={50} height={66.1}></Image>
+                <p>Japão, 〒106-0032 Tokyo, Minato City, Roppongi, 3 Chome−8−15 日拓ビル B1</p>
+              </div>
+
+              <div>
+              <Image className={styles.contatoIcon} src='/img/contatoIcons/telefone.svg' alt='icone telefone' width={50} height={48.74}></Image>
+                <p>+81 3-3403-3666</p>
+              </div>
+
+              <div>
+              <Image className={styles.contatoIcon} src='/img/contatoIcons/email.svg' alt='icone email' width={50} height={39.66}></Image>
+                <p>contato@meltfusiontokyo.com</p>
+              </div>
+            </div>
+            <div className={styles.contatoMap}>
+              <Image src='/img/map.svg' alt='imagem do mapa' width={628} height={486}></Image>
+            </div>
         </div>
       
       <Footer />
