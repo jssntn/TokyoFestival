@@ -6,12 +6,30 @@ import img from '../../public/img/loginImg.svg'
 import logo from '../../public/img/logoLogin.svg'
 import Image from 'next/image'
 import Link from 'next/link';
+import { useRef } from 'react'
+import axios from 'axios'
+import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Login() {
+    const emailRef = useRef<HTMLInputElement>(null);
+    const passRef = useRef<HTMLInputElement>(null);
+    const router = useRouter();
+    
+    async function handleSubmit(){
+        const email = emailRef.current?.value;
+        const password = passRef.current?.value;
+        const resp = await axios.post("http://localhost:3000/api/login",{
+            email: email,
+            password: password
+        })
 
+        if (resp.statusText="OK") {
+            router.push("/");
+          }
+    }
 
     return(
     <>
@@ -27,11 +45,11 @@ export default function Login() {
                     <form>
                     <h3>FAÇA <span>LOGIN</span></h3>
                         <label className={styles.label}>E-mail</label>
-                        <input className={styles.input} type="email" placeholder=" Seunome@email.com"></input>
+                        <input className={styles.input} type="email" placeholder=" Seunome@email.com" ref={emailRef}></input>
                         <div className={styles.doubleInput}>
                             <div className={styles.Senha}>
                                 <label className={styles.labelSenha}>Senha</label>
-                                <input className={styles.inputSenha} type="password" placeholder=" Mínimo de 8 caracteres"></input>
+                                <input className={styles.inputSenha} type="password" placeholder=" Mínimo de 8 caracteres" ref={passRef}></input>
                             </div>
                         </div>
                         <div className={styles.forgetPassword}>
@@ -41,7 +59,7 @@ export default function Login() {
                 </div>
             </div>
             <div className={styles.singUpWrapper}>
-                    <button type='submit' className={styles.submitButton}> ENTRAR </button>
+                    <button type='submit' className={styles.submitButton} onClick={handleSubmit}> ENTRAR </button>
                     <p className={styles.singUp}>Não tem uma conta? <Link href="/cadastro">Crie uma</Link></p>
 
                 </div>

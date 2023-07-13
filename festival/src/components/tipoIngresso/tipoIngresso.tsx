@@ -1,23 +1,30 @@
 import { IngressosProps } from "@/interfaces/interfaces";
 import styles from './tipoIngresso.module.css';
 import axios from 'axios';
-
-
-
-
+import cookie from "cookie";
+import jwt from 'jsonwebtoken';
+import { useRouter } from "next/router";
+import { NextPageContext } from "next";
+import { MyGet } from "../../../api/myget";
+import { useState } from "react";
 
 function TipoIngresso(props:IngressosProps){
-
-    const axios = require('axios').default;
-
+    const router = useRouter();
+    const [userInfo, setUserInfo] = useState(null);
     const vendeIngresso = async () => {
         try{
+            try{
+                setUserInfo(await axios.get("http://localhost:3000/api/user"))
+            }catch{
+                router.push("/login");
+            }
+
             const ingresso = await axios.post('http://localhost:3000/api/ticket', {
-            idTipo: props.TipoIngresso.idTipo,
-            idUser: props.User.idUser
-        });
-            console.log(ingresso);
-            return ingresso
+                idTipo: props.TipoIngresso.idTipo,
+                idUser: userInfo.data.idUser,
+                });
+                return ingresso
+            
         }catch(error){
             if(error instanceof Error){
                 console.log(error.message);

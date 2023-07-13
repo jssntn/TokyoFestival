@@ -6,10 +6,11 @@ import {compare} from 'bcrypt';
 import { sign } from "jsonwebtoken";
 import { secret } from "../../api/secret";
 import cookie from 'cookie';
+import userService from '@/services/userService';
 
 const prisma = new PrismaClient();
 
-export default {
+export default {  
 
     async CreateUser(req: NextApiRequest, res: NextApiResponse){
         try {
@@ -87,5 +88,21 @@ export default {
               
         }
     },
+    
+    async GetUser(idUser: string, res: NextApiResponse) {
+      try {
+        const user = await userService.getUserById(parseInt(idUser));
+        if (user) {
+          return res.status(200).json(user);
+        } else {
+          return res.status(404).json({ message: "User not found" });
+        }
+      } catch (error) {
+        if (error instanceof Error) {
+          return res.status(400).json({ message: error.message });
+        }
+        return res.status(500).json({ message: "Unknown error" });
+      }
+    }
     
 }

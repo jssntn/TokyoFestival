@@ -33,14 +33,21 @@ class UserService {
         return newUser;
     }
 
-    public async getUserById(id: number): Promise<User | null> {
+    public async getUserById(id: number): Promise<any | null> {
         const user = await prisma.user.findUnique({
-            where: {
-                idUser: id
-            }
+          where: {
+            idUser: id,
+          },
+          select: {
+            idUser: true,
+            name: true,
+            age: true,
+            email: true,
+            // Exclude the password field
+          },
         });
         return user;
-    }
+      }
 
     public async getUserByEmail(email: string): Promise<User | null> {
         const user = await prisma.user.findFirst({

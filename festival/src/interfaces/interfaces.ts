@@ -19,7 +19,6 @@ export interface iTipoIngresso{
 }
 
 export interface IngressosProps{
-    User: User,
     TipoIngresso: iTipoIngresso
 }
 
