@@ -30,11 +30,15 @@ export default function NavbarResponsivo() {
                 && 
                 <div className={styles.modalFullScreen}>
                     <div className={styles.closeButton} onClick={closeModal}>&#10006;</div>
-                    <Link href='/' legacyBehavior><a>Início</a></Link>
-                    <Link href='/atracoes' legacyBehavior><a>Atrações</a></Link>
-                    <Link href='/ingressos' legacyBehavior><a>Ingressos</a></Link>
-                    <Link href='/cadastro' legacyBehavior><a>Cadastro</a></Link>
-                    <Link href='/login' legacyBehavior><a>Login</a></Link>
+                    <nav>
+                        <ul>
+                            <li><Link href='/' legacyBehavior><a>Início</a></Link></li>
+                            <li><Link href='/atracoes' legacyBehavior><a>Atrações</a></Link></li>
+                            <li><Link href='/ingressos' legacyBehavior><a>Ingressos</a></Link></li>
+                            <li><Link href='/cadastro' legacyBehavior><a>Cadastro</a></Link></li>
+                            <li><Link href='/login' legacyBehavior><a>Login</a></Link></li>
+                        </ul>
+                    </nav>
                 </div>
                     }
             </header>

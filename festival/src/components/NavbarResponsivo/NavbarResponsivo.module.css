@@ -44,10 +44,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: 5rem;
     font-weight: 700;
-    row-gap: 2.5rem;
+    
+}
+
+.modalFullScreen nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 900;
+    row-gap: 3.5rem;
+    list-style: none;
 }
 
 .modalFullScreen a{
@@ -62,8 +72,8 @@
 
 .closeButton {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: 3rem;
 }
 
 .closeButton:hover {
