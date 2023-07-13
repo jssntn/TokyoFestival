@@ -3,8 +3,11 @@ import styles from './NavbarResponsivo.module.css'
 import { useState } from 'react'
 
 
+interface navbarProps{
+    largura:number
+}
 
-export default function NavbarResponsivo() {
+export default function NavbarResponsivo(props:navbarProps) {
 
     const [openedModal, setOpenedModal] = useState<boolean>(false);
 
@@ -18,7 +21,7 @@ export default function NavbarResponsivo() {
 
     return (
         <>
-            <header className={styles.navbarBox}>
+            <header style={{width:props.largura}} className={styles.navbarBox}>
                 <div className={styles.flexboxHeader}>
                     <h1>東京都</h1>
                     <div>
