@@ -212,3 +212,53 @@
     padding-bottom:2em;
     
 }
+
+/* SEÇÃO FOTOS */
+
+.Wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 20em 0 20em 0;
+}
+
+.fotosContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 12em;
+}
+
+.legendasContainer{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:30%;
+    height: 100%;
+}
+
+.legendasContainer h1{
+    font-size: 12em;
+    text-align: center;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 400;
+    
+
+}
+
+.legendasContainer h2{
+    font-size: 3.7em;
+    text-align: center;
+
+}
+
+.legendasContainer h3{
+    font-size: 3em;
+    text-align: center;
+}
+
+.starImg{
+    margin-top: 5em;
+}
+

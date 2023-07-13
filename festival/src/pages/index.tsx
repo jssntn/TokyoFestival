@@ -167,6 +167,50 @@ const repeatText = (text: string) => {
                 <a>QUERO GARANTIR MEU INGRESSO</a>
                 </Link>
             </div>
+        </div>
+      </div>
+
+       {/*Seção fotos*/}
+       
+        <div className={styles.sectionTitle}>
+          {
+              repeatText('FOTOS ').map((text, index) => {
+                if(index==1){
+                  return <span className={styles.span}>{text}</span>
+                }
+                else{
+                  return <h1>{text}</h1>
+                }
+              })
+            }
+          </div>
+
+        <div className={styles.Wrapper}>
+          <div className={styles.fotosContainer}>
+            <Image src='/img/eventoImg1.svg' alt="Imagem do evento" width={848} height={486} />
+            <Image src='/img/eventoImg2.svg' alt="Imagem do evento" width={848} height={486} />
+            <Image src='/img/eventoImg3.svg' alt="Imagem do evento" width={848} height={486} />
+          </div>
+          <div className={styles.legendasContainer}>
+
+            <div className={styles.legendasBox}>
+              <h1>3</h1>
+              <h2>dias</h2>
+            </div>
+
+            <Image className={styles.starImg} src='/img/star.svg' alt="Imagem de uma estrela" width={157} height={157} />
+
+            <div className={styles.legendasBox}>
+              <h1>9</h1>
+              <h3>atrações</h3>
+            </div>
+
+            <Image className={styles.starImg} src='/img/star.svg' alt="Imagem de uma estrela" width={157} height={157} />
+
+            <div className={styles.legendasBox}>
+            <h1 style={{fontSize:'10em'}}>21</h1>
+              <h2>horas</h2>
+            </div>
           </div>
         </div>
       
