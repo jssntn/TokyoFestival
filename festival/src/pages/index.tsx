@@ -16,7 +16,6 @@ import imagem3 from '../../public/img/cardImage3.svg'
 import imagem4 from '../../public/img/cardImage4.svg'
 import imagem5 from '../../public/img/cardImage5.svg'
 import imagem6 from '../../public/img/cardImage6.svg'
-import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
@@ -123,7 +122,10 @@ const repeatText = (text: string) => {
               <Image className={styles.sobreNosJaponeseImage} src='/img/sobreNosJaponeseImage.svg' alt='Imagem de texto em japonês' width={450} height={126}/>
             </div>
             <div className={styles.sobreNosImageContainer}><Image src='/img/sobreNosImage.svg' alt='Imagem de um show ao vivo' width={653} height={544}/>
-            <Image className={styles.layer} src='/img/Layer.svg' alt='Imagem de um show ao vivo' width={400} height={60}/>
+            <Image className={styles.layer} src='/img/Layer.svg' alt='Imagem de um show ao vivo' width={675} height={80}/>
+            {
+              <Image className={styles.layerResponsivo} src='/img/Layer.svg' alt='Imagem de um show ao vivo' width={675} height={80}/>
+            }
             </div>
           </div>
         </section>

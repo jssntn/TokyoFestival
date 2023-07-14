@@ -347,6 +347,10 @@
     display: none;
   }
 
+  .layerResponsivo{
+    display: none;
+  }
+
 
 @media (max-width:1340px) {
 
@@ -498,5 +502,16 @@
       
       .spacing {
         margin-bottom: 4rem;
+      }
+
+      .layer{
+        display: none;
+      }
+
+      .layerResponsivo {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -15px;
       }
 }
