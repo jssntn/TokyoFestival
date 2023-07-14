@@ -1,5 +1,24 @@
-.nomePhotoBox h2 {
+.nomePhotoBox2 h2 {
     font-size: 2rem;
     text-align: center;
     color: #2FDD41;
+}
+
+
+.nomePhotoBox1{
+    width: 18rem;
+    height: 7rem;
+    margin-left: 3.5rem;
+    position: relative;
+}
+
+.nome1PAbsoluteBox {
+    position: absolute;
+    bottom: -3.5rem;
+    background-color: #990DCE;
+}
+
+.nome1PAbsoluteBox h2 {
+    color: #F5F5F5;
+    font-size: 2rem;
 }

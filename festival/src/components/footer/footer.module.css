@@ -64,3 +64,17 @@
 .footerBottom p:hover{
     cursor:default;
 }
+
+
+
+@media (max-width:1290px) {
+
+    .content {
+        flex-direction: column;
+    }
+    
+    .footerBottom {
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+}

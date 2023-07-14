@@ -42,7 +42,7 @@ function Navbar(){
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/atracoes">
                  Atrações
               </Link>
             </li>

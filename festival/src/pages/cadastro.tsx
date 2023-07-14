@@ -6,9 +6,13 @@ import img from '../../public/img/cadastroImg.svg'
 import logo from '../../public/img/logoCadastro.svg'
 import Image from 'next/image'
 import Link from 'next/link';
+<<<<<<< HEAD
 import { useRef } from 'react'
 import axios from 'axios'
 import { useRouter } from 'next/router'
+=======
+import NavbarResponsivo from '@/components/navbarResponsivo/NavbarResponsivo'
+>>>>>>> 2d53e649de7d71298e2a4bff71a274c55cf260e5
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -47,7 +51,10 @@ export default function Cadastro() {
     
     return(
     <>
-        <Navbar/>
+        <div className={styles.navbarDesktop}><Navbar/></div>
+        {( // RESPONSIVO
+            <div className={styles.navbarResponsivo}><NavbarResponsivo largura={700} /></div> 
+        )}
         <div className={styles.Wrapper}>
             
             <div className={styles.Container}>
@@ -55,6 +62,13 @@ export default function Cadastro() {
                 <Image src={img} alt="Imagem" className={styles.Img} />
                 <Image src={logo} alt="Imagem" className={styles.imgLogo} />
                 </div>
+                {(
+                    // RESPONSIVO
+                    <div className={styles.imgResponsivoBox}>
+                         <Image src='/img/imgCadastroResponsivo.svg' width={700} height={307} alt='Imagem de fundo'/>
+                         <Image src='/img/logoCadastro.svg' alt="Imagem" width={200} height={200} className={styles.imgLogo} />
+                         </div>
+                )}
                 <div className={styles.form}>
                     <form>
                     <h3>CRIE <span>UMA CONTA</span></h3>
@@ -80,8 +94,15 @@ export default function Cadastro() {
                 </div>
             </div>
             <div className={styles.singUpWrapper}>
+<<<<<<< HEAD
                     <button type='submit' className={styles.submitButton} onClick={handleSubmit}> CRIAR CONTA </button>
                     <p className={styles.singUp}> Já tem uma conta? <Link href="/login">Faça login</Link></p>
+=======
+                    <button type='submit' className={styles.submitButton}> CRIAR CONTA </button>
+                    <div className={styles.singUpBox}>
+                        <p className={styles.singUp}> Já tem uma conta? <Link href="/login">Faça login</Link></p>
+                    </div>
+>>>>>>> 2d53e649de7d71298e2a4bff71a274c55cf260e5
 
                 </div>
         </div>
