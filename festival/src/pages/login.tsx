@@ -30,6 +30,9 @@ export default function Login() {
             router.push("/");
           }
     }
+    async function handleLogout(){
+        const resp = await axios.get("http://localhost:3000/api/logout");
+    }
 
     return(
     <>
@@ -62,7 +65,7 @@ export default function Login() {
                     <button type='submit' className={styles.submitButton} onClick={handleSubmit}> ENTRAR </button>
                     <p className={styles.singUp}>Não tem uma conta? <Link href="/cadastro">Crie uma</Link></p>
 
-                </div>
+            </div>
         </div>
     <Footer/>
     </>

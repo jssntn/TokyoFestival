@@ -103,6 +103,16 @@ export default {
         }
         return res.status(500).json({ message: "Unknown error" });
       }
-    }
+    },
     
+    async UserLogout(req: NextApiRequest, res: NextApiResponse){
+
+      res.setHeader('Set-Cookie', cookie.serialize('auth', '', {
+        expires: new Date(0),
+        path: '/', 
+      }));
+
+      res.status(200).json({ message: 'Logout successful' });
+    }
+
 }
