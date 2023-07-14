@@ -26,7 +26,9 @@ export interface IngressosProps{
 export interface CardProps {
     caminho: string,
     nome: string,
-    tipo:boolean
+    tipo:boolean,
+    largura:number,
+    altura:number
 }
 
 export interface HomeIngressoProps {

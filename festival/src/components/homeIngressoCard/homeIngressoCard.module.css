@@ -1,6 +1,6 @@
 .ingressoCardBox {
-    width: 250px;
-    height: 330px;
+    width: 400px;
+    height: 584px;
     text-align: center;
     border: 1px solid #2FDD41;
     display: flex;
@@ -11,15 +11,22 @@
 }
 
 .ingressoCardBox p{
+    width: 63%;
+    text-align: justify;
     display: block;
-    width: 60%;
-    font-size: 1.2rem;
+    /* width: 60%; */
+    font-size: 2.5rem;
     color: #F5F5F5;
     word-break: break-all;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.ingressoCardBox h1 {
+    font-size: 3.5rem!important;
+    font-weight: 400;
 }
 
 .ingressoCardBox h2 {
-    font-size: 2.5rem;
+    font-size: 5rem;
     -webkit-text-stroke: 0.1px #2FDD41;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
