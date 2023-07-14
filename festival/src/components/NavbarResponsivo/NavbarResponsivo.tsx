@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styles from './NavbarResponsivo.module.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import axios from 'axios';
 
 
 interface navbarProps{
@@ -8,7 +9,8 @@ interface navbarProps{
 }
 
 export default function NavbarResponsivo(props:navbarProps) {
-
+    const [isLogged, setIsLogged] = useState(true);
+    const [canRender, setCanRender] = useState(true);
     const [openedModal, setOpenedModal] = useState<boolean>(false);
 
     const openModal = () => {
@@ -18,6 +20,27 @@ export default function NavbarResponsivo(props:navbarProps) {
     const closeModal = () => {
         setOpenedModal(false);
     }
+
+    function handleLogout(){
+        try{
+          axios.get("http://localhost:3000/api/logout");
+          setIsLogged(false);
+        }catch{
+  
+        }
+      }
+      useEffect(() => {
+        axios
+          .get("http://localhost:3000/api/user")
+          .then((res) => {
+            setIsLogged(true);
+            setCanRender(true);
+          })
+          .catch((error) => {
+            setIsLogged(false);
+            setCanRender(true);
+          });
+      }, []);
 
     return (
         <>
@@ -38,8 +61,14 @@ export default function NavbarResponsivo(props:navbarProps) {
                             <li><Link href='/' legacyBehavior><a>Início</a></Link></li>
                             <li><Link href='/atracoes' legacyBehavior><a>Atrações</a></Link></li>
                             <li><Link href='/ingressos' legacyBehavior><a>Ingressos</a></Link></li>
-                            <li><Link href='/cadastro' legacyBehavior><a>Cadastro</a></Link></li>
-                            <li><Link href='/login' legacyBehavior><a>Login</a></Link></li>
+                            
+                            {!isLogged && canRender &&(
+                                <><li><Link href='/cadastro' legacyBehavior><a>Cadastro</a></Link></li>
+                                  <li><Link href='/login' legacyBehavior><a>Login</a></Link></li></>
+                                )}
+                            {isLogged && canRender &&(
+                                <><li><button onClick={handleLogout}>Logout</button></li></>
+                            )}
                         </ul>
                     </nav>
                 </div>

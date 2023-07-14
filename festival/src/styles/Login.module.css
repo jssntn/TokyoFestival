@@ -147,4 +147,72 @@
     color: #F5F5F5;
     text-decoration: none;
 }
+.imgResponsivoBox{
+  display: none !important;
+  
+}
 
+.navbarResponsivo {
+  display: none;
+}
+
+@media (max-width:1290px){
+
+  .imgResponsivoBox{
+    display: block !important;
+    
+  }
+  .Container{
+    flex-direction: column;
+    width: 70rem;
+    margin-top: 8rem;
+    height: 120rem;
+  }
+
+  .imgs{
+    display: none !important;
+  }
+
+  .navbarResponsivo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbarDesktop{
+    display: none;
+  }
+
+  .doubleInput {
+    flex-direction: column;
+    gap: 0;
+  }
+  .inputIdade{
+    width: 58rem !important;
+  }
+  .inputSenha{
+    width: 58rem !important;
+  }
+
+
+  .submitButton{
+    left: -17rem;
+    bottom: -3rem;
+  }
+  .singUpWrapper p {
+    position:absolute;
+    margin: 0;
+    bottom: -7rem;
+    left: -14rem;
+  }
+
+  .singUpBox{
+    position: absolute;
+    left: 0;
+  }
+
+  .imgLogo{
+    top: 30rem;
+  }
+
+
+}

@@ -7,7 +7,7 @@
 
 .flexbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -71,4 +71,54 @@
     color:#2FDD41;
     white-space: nowrap;
 
+}
+.navbarResponsivo {
+    display: none;
+  }
+@media (max-width:1290px){
+    
+    .mainSection{
+        width: 95.5%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexbox{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .box1{
+        text-align: center;
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box2{
+        text-align: center;
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box3{
+        text-align: center;
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbarResponsivo {
+        display: flex;
+        justify-content: center;
+      }
+      .navbarDesktop{
+        display: none;
+      }
 }

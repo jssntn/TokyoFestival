@@ -167,39 +167,132 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 9rem 3rem;
-    width: 30rem;
-    height: 6rem;
+    margin: 12rem 9rem 0 9rem;
+    width: 40rem;
+    height: 7rem;
     background-color: hsl(284, 88%, 43%);
 }
-
+.pAtracoesButtonBox:hover{
+    background-color: #2FDD41;
+}
 
 .pAtracoesButtonBox a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
     color: #F5F5F5;
 }
 
 .ingressoSectionBox {
     display: flex;
     margin-top: 5rem;
-    column-gap: 7rem;
+    column-gap: 5rem;
     margin-left: 3rem;
 }
 
 .ingressosButtonBox {
-    width: 45%;
-    height: 4rem;
+    width: 60rem;
+    height: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #990DCE;
-    margin: 5rem 25rem;
+    margin: 8rem 25rem 12rem 25rem;
 }
-
+.ingressosButtonBox:hover{
+    background-color: #2FDD41;
+}
 .ingressosButtonBox a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #F5F5F5;
 
+}
+.ingressosButtonBox a span{
+    padding-bottom:2em;
+    
+}
+
+/* SEÇÃO FOTOS */
+
+.WrapperFotos{
+    display: flex;
+    justify-content: center;
+    margin: 20em 0 20em 0;
+}
+
+.fotosContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 12em;
+}
+
+.legendasContainer{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:30%;
+    height: 100%;
+}
+
+.legendasContainer h1{
+    font-size: 12em;
+    text-align: center;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 400;
+    
+
+}
+
+.legendasContainer h2{
+    font-size: 3.7em;
+    text-align: center;
+
+}
+
+.legendasContainer h3{
+    font-size: 3em;
+    text-align: center;
+}
+
+.starImg{
+    margin-top: 5em;
+}
+
+/* SEÇÃO CONTATO */
+
+.contatoWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 9em 0 20em 0;
+    gap:17em;
+}
+
+.contatoInfos{
+    font-size: 16px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:4em;
+    width: 25%;
+    height: 100%;
+}
+
+.contatoInfos div{
+    display: flex;
+    max-width: 85%;
+}
+
+.contatoInfos p{
+    font-size: 1.25em;
+    font-family: 'PT Sans Caption', sans-serif;
+    align-self: self-end;
+}
+
+.contatoIcon{
+    margin-right:1em;
 }

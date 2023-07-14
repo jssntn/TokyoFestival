@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 import styles from '../styles/Atracoes.module.css';
 import PhotoCard from "@/components/photoCard/photoCard";
+import NavbarResponsivo from "@/components/NavbarResponsivo/NavbarResponsivo";
 
 
 export default function Atracoes() {
@@ -21,8 +22,12 @@ export default function Atracoes() {
    
     return(
         <>
-            <Navbar />
+            <div className={styles.navbarDesktop}><Navbar/></div>
+            {( // RESPONSIVO
+            <div className={styles.navbarResponsivo}><NavbarResponsivo largura={700} /></div> 
+            )}
             <div className={styles.sectionTitle}>
+                
          {
             repeatText('ATRAÇÕES ').map((text, index) => {
               if(index==1){

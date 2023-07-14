@@ -109,16 +109,16 @@ const repeatText = (text: string) => {
       <div className='background-container'>
         <div className={styles.sectionTitle}>
           {
-              repeatText('PRINCIPAIS ATRAÇÕES ').map((text, index) => {
+              repeatText('PRINCIPAISATRAÇÕES').map((text, index) => {
                 if(index==1){
                   return <span className={styles.span}>{text}</span>
                 }
                 else if(index ==0){
-                  let parts = text.split("P");
-                  return <h1>{parts[1]}</h1>
+                  let parts = text.split("A");
+                  return <h1>{parts[2]+"A"+parts[3]}</h1>
                 }
                 else{
-                  return <h1>{text}</h1>
+                  return <h1>{text} </h1>
                 }
               })
             }
@@ -131,13 +131,13 @@ const repeatText = (text: string) => {
             </div>
             <div className={styles.pAtracoesButtonBox}>
               <Link className={styles.pAtracoesButton} href='/' legacyBehavior>
-                <a>MOSTRAR TODOS <span style={{marginLeft:'1rem'}}>&rarr;</span></a>
+                <a>MOSTRAR TODOS <span>&rarr;</span></a>
                 </Link>
             </div>
         </section>
       </div>
       
-      {/*Seção Principais Atrações*/}
+      {/*Seção Ingressos*/}
       <div className='background-container'>
         <div className={styles.sectionTitle}>
           {
@@ -166,7 +166,93 @@ const repeatText = (text: string) => {
                 <a>QUERO GARANTIR MEU INGRESSO</a>
                 </Link>
             </div>
+        </div>
+      </div>
+
+       {/*Seção fotos*/}
+
+        <div className={styles.sectionTitle}>
+          {
+              repeatText('FOTOS ').map((text, index) => {
+                if(index==1){
+                  return <span className={styles.span}>{text}</span>
+                }
+                else{
+                  return <h1>{text}</h1>
+                }
+              })
+            }
           </div>
+
+        <div className={styles.WrapperFotos}>
+          <div className={styles.fotosContainer}>
+            <Image src='/img/eventoImg1.svg' alt="Imagem do evento" width={848} height={486} />
+            <Image src='/img/eventoImg2.svg' alt="Imagem do evento" width={848} height={486} />
+            <Image src='/img/eventoImg3.svg' alt="Imagem do evento" width={848} height={486} />
+          </div>
+          <div className={styles.legendasContainer}>
+
+            <div className={styles.legendasBox}>
+              <h1>3</h1>
+              <h2>dias</h2>
+            </div>
+
+            <Image className={styles.starImg} src='/img/star.svg' alt="Imagem de uma estrela" width={157} height={157} />
+
+            <div className={styles.legendasBox}>
+              <h1>9</h1>
+              <h3>atrações</h3>
+            </div>
+
+            <Image className={styles.starImg} src='/img/star.svg' alt="Imagem de uma estrela" width={157} height={157} />
+
+            <div className={styles.legendasBox}>
+            <h1 style={{fontSize:'10em'}}>21</h1>
+              <h2>horas</h2>
+            </div>
+          </div>
+        </div>
+
+        {/* Seção Contato */}
+
+        <div className={styles.sectionTitle}>
+          {
+              repeatText('CONTATO ').map((text, index) => {
+                if(index==1){
+                  return <span className={styles.span}>{text}</span>
+                }
+                // else if(index == 0){
+                //   let parts = text.split("C");
+                //   return <h1>{parts[1]}</h1>
+                // }
+                else{
+                  return <h1>{text}</h1>
+                }
+              })
+            }
+          </div>
+
+        <div className={styles.contatoWrapper}>
+            <div className={styles.contatoInfos}>
+
+              <div>
+              <Image className={styles.contatoIcon} src='/img/contatoIcons/endereco.svg' alt='icone endereço' width={50} height={66.1}></Image>
+                <p>Japão, 〒106-0032 Tokyo, Minato City, Roppongi, 3 Chome−8−15 日拓ビル B1</p>
+              </div>
+
+              <div>
+              <Image className={styles.contatoIcon} src='/img/contatoIcons/telefone.svg' alt='icone telefone' width={50} height={48.74}></Image>
+                <p>+81 3-3403-3666</p>
+              </div>
+
+              <div>
+              <Image className={styles.contatoIcon} src='/img/contatoIcons/email.svg' alt='icone email' width={50} height={39.66}></Image>
+                <p>contato@meltfusiontokyo.com</p>
+              </div>
+            </div>
+            <div className={styles.contatoMap}>
+              <Image src='/img/map.svg' alt='imagem do mapa' width={628} height={486}></Image>
+            </div>
         </div>
       
       <Footer />

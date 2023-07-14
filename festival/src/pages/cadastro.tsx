@@ -6,13 +6,10 @@ import img from '../../public/img/cadastroImg.svg'
 import logo from '../../public/img/logoCadastro.svg'
 import Image from 'next/image'
 import Link from 'next/link';
-<<<<<<< HEAD
 import { useRef } from 'react'
 import axios from 'axios'
 import { useRouter } from 'next/router'
-=======
-import NavbarResponsivo from '@/components/navbarResponsivo/NavbarResponsivo'
->>>>>>> 2d53e649de7d71298e2a4bff71a274c55cf260e5
+import NavbarResponsivo from '@/components/NavbarResponsivo/NavbarResponsivo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -67,7 +64,7 @@ export default function Cadastro() {
                     <div className={styles.imgResponsivoBox}>
                          <Image src='/img/imgCadastroResponsivo.svg' width={700} height={307} alt='Imagem de fundo'/>
                          <Image src='/img/logoCadastro.svg' alt="Imagem" width={200} height={200} className={styles.imgLogo} />
-                         </div>
+                    </div>
                 )}
                 <div className={styles.form}>
                     <form>
@@ -94,15 +91,10 @@ export default function Cadastro() {
                 </div>
             </div>
             <div className={styles.singUpWrapper}>
-<<<<<<< HEAD
-                    <button type='submit' className={styles.submitButton} onClick={handleSubmit}> CRIAR CONTA </button>
-                    <p className={styles.singUp}> Já tem uma conta? <Link href="/login">Faça login</Link></p>
-=======
                     <button type='submit' className={styles.submitButton}> CRIAR CONTA </button>
                     <div className={styles.singUpBox}>
                         <p className={styles.singUp}> Já tem uma conta? <Link href="/login">Faça login</Link></p>
                     </div>
->>>>>>> 2d53e649de7d71298e2a4bff71a274c55cf260e5
 
                 </div>
         </div>

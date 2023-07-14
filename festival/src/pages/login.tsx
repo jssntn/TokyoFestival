@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { useRef } from 'react'
 import axios from 'axios'
 import { useRouter } from 'next/router'
+import NavbarResponsivo from '@/components/navbarResponsivo/NavbarResponsivo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,8 +36,11 @@ export default function Login() {
     }
 
     return(
-    <>
-        <Navbar/>
+    <>  
+        <div className={styles.navbarDesktop}><Navbar/></div>
+        {( // RESPONSIVO
+            <div className={styles.navbarResponsivo}><NavbarResponsivo largura={700} /></div> 
+        )}
         <div className={styles.Wrapper}>
             
             <div className={styles.Container}>
@@ -44,6 +48,13 @@ export default function Login() {
                 <Image src={img} alt="Imagem" className={styles.Img} />
                 <Image src={logo} alt="Imagem" className={styles.imgLogo} />
                 </div>
+                {(
+                    // RESPONSIVO
+                    <div className={styles.imgResponsivoBox}>
+                         <Image src='../img/imgLoginResponsivo.svg' width={700} height={307} alt='Imagem de fundo'/>
+                         <Image src='../img/logoLogin.svg' alt="Imagem" width={200} height={200} className={styles.imgLogo} />
+                         </div>
+                )}
                 <div className={styles.form}>
                     <form>
                     <h3>FAÇA <span>LOGIN</span></h3>

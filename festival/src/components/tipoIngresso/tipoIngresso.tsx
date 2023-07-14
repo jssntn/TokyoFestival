@@ -1,29 +1,29 @@
 import { IngressosProps } from "@/interfaces/interfaces";
 import styles from './tipoIngresso.module.css';
 import axios from 'axios';
-import cookie from "cookie";
-import jwt from 'jsonwebtoken';
 import { useRouter } from "next/router";
-import { NextPageContext } from "next";
-import { MyGet } from "../../../api/myget";
 import { useState } from "react";
+import { User } from "@prisma/client";
 
 function TipoIngresso(props:IngressosProps){
     const router = useRouter();
-    const [userInfo, setUserInfo] = useState(null);
+    const [userInfo, setUserInfo] = useState<User>();
     const vendeIngresso = async () => {
         try{
             try{
-                setUserInfo(await axios.get("http://localhost:3000/api/user"))
+                const User = await axios.get("http://localhost:3000/api/user");
+                setUserInfo(User.data)
             }catch{
                 router.push("/login");
             }
-
-            const ingresso = await axios.post('http://localhost:3000/api/ticket', {
+            if (userInfo){
+                const ingresso = await axios.post('http://localhost:3000/api/ticket', {
                 idTipo: props.TipoIngresso.idTipo,
-                idUser: userInfo.data.idUser,
+                idUser: userInfo.idUser,
                 });
                 return ingresso
+            }
+            
             
         }catch(error){
             if(error instanceof Error){
