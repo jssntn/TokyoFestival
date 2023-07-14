@@ -1,5 +1,5 @@
 .mainSection{
-    width: 95.5%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 10rem;
@@ -9,12 +9,14 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    column-gap: 7rem;
 }
 
 .box1{
     text-align: center;
     width: 40rem;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -22,9 +24,12 @@
 .box1 p {
     font-size: 1.3rem;
     color: #F5F5F5;
+    margin-left: 7rem;
+    margin-top: 3rem;
 }
 
 .box2{
+    position: relative;
     text-align: center;
     width: 40rem;
     display: flex;
@@ -35,9 +40,11 @@
 .box2 p {
     font-size: 1.3rem;
     color: #F5F5F5;
+    margin-top: 3rem;
 }
 
 .box3{
+    position: relative;
     text-align: center;
     width: 40rem;
     display: flex;
@@ -48,6 +55,8 @@
 .box3 p {
     font-size: 1.3rem;
     color: #F5F5F5;
+    margin-right: 7rem;
+    margin-top: 3rem;
 }
 
 .sectionTitle{
@@ -71,4 +80,11 @@
     color:#2FDD41;
     white-space: nowrap;
 
+}
+
+.star {
+    position: absolute;
+    right: 5rem;
+    top: 0;
+    z-index: 3;
 }
