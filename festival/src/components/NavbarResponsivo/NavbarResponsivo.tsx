@@ -67,7 +67,7 @@ export default function NavbarResponsivo(props:navbarProps) {
                                   <li><Link href='/login' legacyBehavior><a>Login</a></Link></li></>
                                 )}
                             {isLogged && canRender &&(
-                                <><li><button onClick={handleLogout}>Logout</button></li></>
+                                <><li><button className={styles.logoutButton} onClick={handleLogout}>Logout</button></li></>
                             )}
                         </ul>
                     </nav>

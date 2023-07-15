@@ -65,7 +65,7 @@ function Navbar(){
           {isLogged && canRender &&(
           <>
             <li>
-              <button onClick={handleLogout}>Logout</button>
+              <button className={styles.logoutButton} onClick={handleLogout}>Logout</button>
             </li>
           </>
         )}

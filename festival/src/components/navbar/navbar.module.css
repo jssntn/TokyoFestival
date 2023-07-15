@@ -53,5 +53,17 @@
     margin:  0 1em 0 1em;
     display: flex;
 }
+.logoutButton{
+    border-width: 3px;
+    border-color: #990DCE;  
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 14px;
+    background-color: transparent;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 1em;
+    margin:  0 1em 0 1em;
+}
 
 
