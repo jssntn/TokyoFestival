@@ -41,7 +41,7 @@ html, body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width:100%;
+    max-width:100%;
     /* height: 35rem; */
 
 }
@@ -51,29 +51,6 @@ html, body {
     height: 10rem;
     align-self: flex-start;
     margin-left: 50px;
-    background-color: red;
     display: flex;
 }
-
-
-.title {
-    font-size: 4rem;
-    font-weight: 900;
-    color: #2FDD41;
-    margin-left: 5rem;
-    position: relative;
-}
-
-.title::before{
-    position: absolute;
-    content: '---------------';
-    left: -22rem;
-}
-
-.title::after{
-    position: absolute;
-    content: '-------------------------------------------------------------';
-    right: -15rem;
-}
-
 

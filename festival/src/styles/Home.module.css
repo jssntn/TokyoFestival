@@ -17,7 +17,7 @@
 .imgContainer h3 {
     position: absolute;
     top: 11%;
-    left: 26%;
+    left: 24%;
     font-size: 5rem;
     border-radius: 3rem;
     font-weight: 900;
@@ -28,12 +28,46 @@
 .imgContainer h1 {
     position: absolute;
     top: 18%;
-    left: 18.5%;
+    left: 14%;
     font-size: 16rem;
     font-weight: 900;
     border-radius: 3rem;
     border: none;
     z-index: 2;
+    /*box-shadow: 0px 0px 80px 40px black;*/
+}
+
+.imgContainerResponsivo {
+    display: none;
+    margin-top: 10rem;
+    position: relative;
+    font-family: 'Dela Gothic One', sans-serif;
+    color: #F5F5F5;
+    margin-bottom: 4rem;
+}
+
+.imgContainerResponsivo h3 {
+    position: absolute;
+    top: 16%;
+    left: 26%;
+    font-size: 4rem;
+    border-radius: 3rem;
+    font-weight: 900;
+    z-index: 2;
+    border: none;
+    color: #F5F5F5;
+}
+
+.imgContainerResponsivo h1 {
+    position: absolute;
+    top: 23%;
+    left: 18%;
+    font-size: 12rem;
+    font-weight: 900;
+    border-radius: 3rem;
+    border: none;
+    z-index: 2;
+    color: #F5F5F5;
     /*box-shadow: 0px 0px 80px 40px black;*/
 }
 
@@ -77,10 +111,10 @@
 .bShadow {
     position: absolute;
     top: 13%;
-    left: 18.5%;
+    left: 14%;
     background-color: #1E1E1E;
-    width: 65rem;
-    height: 24rem;
+    width: 74rem;
+    height: 23rem;
     opacity: 0.7;
     z-index: 1;
     border-radius: 8rem;
@@ -157,10 +191,10 @@
 .photoSectionBox {
     max-width: 100%;
     height: 100%;
-    margin-top: 5rem;
     display: flex;
-    column-gap: 7rem;
+    column-gap: 5rem;
     margin-left: 3rem;
+    
 }
 
 .pAtracoesButtonBox{
@@ -295,4 +329,189 @@
 
 .contatoIcon{
     margin-right:1em;
+}
+
+.navbarResponsivo {
+    display: none;
+  }
+
+  .navbarDesktop{
+    display: flex;
+  }
+
+  .fotosContainerResponsivo{
+    display: none;
+  }
+
+  .carrossel{
+    display: none;
+  }
+
+  .layerResponsivo{
+    display: none;
+  }
+
+
+@media (max-width:1340px) {
+
+    .navbarResponsivo {
+        display: flex;
+        justify-content: center;
+      }
+    
+    .navbarDesktop{
+        display: none;
+      }
+    
+      .imgContainer{
+        display: none;
+      }
+
+      .imgContainerResponsivo{
+        display: block;
+      }
+      
+      .bShadow{
+        left: 13%;
+        width: 65rem;
+        height: 19rem;
+      }
+
+      .bottomContent{
+        column-gap: 10rem;
+      }
+
+      .bottomContent h3 {
+        font-size: 2.2rem;
+        margin-top: 1rem;
+      }
+
+      .buyButton{
+        width: 35rem;
+        padding: 0;
+      }
+
+      .sobreNosContainerBox{
+        flex-direction: column-reverse;
+        row-gap: 7rem;
+      }
+
+
+      .sobreNosText h2 {
+        margin-left: 8rem;
+      }
+
+      .sobreNosText p {
+        margin-left: 8rem;
+      }
+
+      .sobreNosJaponeseImage{
+        margin-left: 10rem;
+      }
+
+      .fotosContainer{
+        display: none;
+      }
+
+      .fotosContainerResponsivo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .legendasContainer{
+        display: none;
+      }
+
+      .legendasBox {
+        position: relative;
+      }
+
+      .legendasBox h1 {
+        position: absolute;
+      }
+      
+      .legendasBox .numeroA {
+        top:-43rem;
+        right: -40rem;
+        color: #F5F5F5;
+        font-size: 12rem;
+      }
+
+      .legendasBox .textoA {
+        font-size: 6rem;
+        color: #F5F5F5;
+        top:-28rem;
+        right: -42rem;
+      }
+
+      .legendasBox .numeroB {
+        color: #F5F5F5;
+        font-size: 12rem;
+        top:-43rem;
+        right: -40rem;
+      }
+
+      .legendasBox .textoB {
+        font-size: 5rem;
+        color: #F5F5F5;
+        top:-28rem;
+        right: -47rem;
+      }
+
+      .legendasBox .numeroC {
+        color: #F5F5F5;
+        font-size: 12rem;
+        top:-43rem;
+        right: -41rem;
+      }
+
+      .legendasBox .textoC {
+        font-size: 5rem;
+        color: #F5F5F5;
+        top:-28rem;
+        right: -42rem;
+      }
+
+      .starImg1 {
+        position: absolute;
+        top: -13rem;
+        left: -11rem;
+      }
+
+      .contatoWrapper{
+        flex-direction: column;
+      }
+
+      .contatoInfos{
+        width: 628px;
+      }
+
+      .photoSectionBox{
+        display: none;
+      }
+
+      .carrossel{
+        display: flex;
+        width: 65rem;
+      }
+
+      .ingressoSectionBox{
+        display: none;
+      }
+      
+      .spacing {
+        margin-bottom: 4rem;
+      }
+
+      .layer{
+        display: none;
+      }
+
+      .layerResponsivo {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+      }
 }

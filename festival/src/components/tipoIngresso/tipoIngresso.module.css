@@ -2,8 +2,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor:default;
-    
+    flex-direction: column;
 
 }
 .Container{
@@ -75,10 +76,10 @@
     -webkit-text-fill-color: #2FDD41;
     color:#2FDD41;
 }
-.Container .Button{
+.Button{
     color:white;
     position: relative;
-    top:5.5%;
+    top: 5.5%;
     font-size:1.8125em !important;
     background-color: #990DCE;
     width: 22.8125em;
@@ -89,4 +90,48 @@
 .Button:hover{
     background-color: #2FDD41;
     cursor: pointer;
+}
+
+.Mobile{
+    display: none;
+}
+
+@media (max-width:1290px){
+    .Mobile{
+        display: flex;
+    }
+    .Desktop{
+        display: none;
+    }
+    .Wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor:default;
+        flex-direction: column;
+        
+    }
+    
+    .Container{
+        font-size: 16px;
+        width:72%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #2FDD41;
+        color: white;
+        /* para testes */
+        height: auto;
+        
+    }
+    .Content{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        margin:3em;
+        gap:5em;
+        flex-direction: column;
+    }
 }

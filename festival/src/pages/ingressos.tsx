@@ -6,18 +6,10 @@ import { iTipoIngresso, User } from "@/interfaces/interfaces";
 import { Tipo } from "@prisma/client";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import NavbarResponsivo from "@/components/navbarResponsivo/NavbarResponsivo";
 
 export default function Ingressos() {
-  const Julia: User = {
-    idUser: 1,
-    name: "Julia",
-    age: 21,
-    email: "emailteste",
-    ingresso: [],
-  };
-
   const [tipo, setTipo] = useState<iTipoIngresso[]>([]);
-  const [user, setUser] = useState<User>(Julia);
 
   const fetchTipoIngresso = async () => {
     const response = await axios.get('http://localhost:3000/api/tickettypes');
@@ -37,10 +29,15 @@ export default function Ingressos() {
 
   return (
     <div className={styles.Wrapper}>
-      <Navbar />
+      <div className={styles.navbarDesktop}><Navbar/></div>
+        {( // RESPONSIVO
+            <div className={styles.navbarResponsivo}><NavbarResponsivo largura={700} /></div> 
+        )}
+
+
       <section className={styles.cards}>
         {tipo.map((tipo) => {
-          return <TipoIngresso TipoIngresso={tipo as iTipoIngresso} />;
+          return <TipoIngresso TipoIngresso={tipo as iTipoIngresso}  />;
         })}
       </section>
       <Footer />
