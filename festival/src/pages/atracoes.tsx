@@ -2,7 +2,7 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 import styles from '../styles/Atracoes.module.css';
 import PhotoCard from "@/components/photoCard/photoCard";
-import NavbarResponsivo from "@/components/NavbarResponsivo/NavbarResponsivo";
+import NavbarResponsivo from "@/components/navbarResponsivo/NavbarResponsivo";
 import Image from "next/image";
 
 
