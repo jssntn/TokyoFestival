@@ -33,10 +33,10 @@ function Navbar(){
     return (
         <nav className={styles.Navbar}>
           <ul>
-          <li className={styles.logo}>
+            <li className={styles.logo}>
                 東京都
             </li>
-          <li>
+            <li>
               <Link href="/">
                 Início
               </Link>

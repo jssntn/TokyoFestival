@@ -9,14 +9,14 @@ function HomeIngressoCard(props:HomeIngressoProps){
             <div className={styles.ingressoCardBox} >
                 <h1 style={{color:'#F5F5F5',fontSize:'2rem'}}>{props.tipo}</h1>
                 <p>
-                Lorem ipsum lorem
+                Lorem ipsum lorem <br/>
                 ipsum lorem ipsum
                 </p>
                 <p>
-                _Acesso a isso
-                _Acesso a aquilo
-                _Acesso a área tal
-                _Kit de boas vindas
+                _Acesso a isso <br/>
+                _Acesso a aquilo <br/>
+                _Acesso a área tal <br/>
+                _Kit de boas vindas 
                 </p>
                 <h2>R$ {props.preco}</h2>
             </div>

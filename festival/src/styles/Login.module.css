@@ -10,7 +10,7 @@
 .Container{
     font-size:16px;
     display: flex;
-    border: 1px solid #990DCE;
+    border: 1px solid  #B85ADB;
     width: 80.625em;
     /*height: 48em;*/
     margin: 10em 0 0 0;
@@ -40,20 +40,20 @@
 .form h3{
     text-align: center;
     font-size: 3.125em;
-    color:#990DCE;
+    color: #B85ADB;
     width: 100%;
     margin: 1.25em 0 0.75em 0;
 }
 
 .form span{
-    -webkit-text-stroke: 0.1px #990DCE;
+    -webkit-text-stroke: 0.1px  #B85ADB;
     -webkit-text-fill-color: transparent;
 }
 
 .form label{
     width: 100%;
     font-size:1.8125em;
-    color: #990DCE;
+    color:  #B85ADB;
     margin: 0.5em 0 0.5em 0;
 }
 
@@ -63,7 +63,7 @@
     height: 3em;
     width: 29em;
     background-color: transparent;
-    border: 1px solid #990DCE;
+    border: 1px solid  #B85ADB;
     margin-bottom:1em;
     font-family: 'PT Sans Caption', sans-serif;
     color:white;
@@ -107,7 +107,7 @@
   }
  
   .submitButton:hover{
-    background-color: #990DCE;
+    background-color:  #B85ADB;
   }
   .singUpWrapper{
     display: flex;
@@ -124,7 +124,7 @@
     font-family: 'PT Sans Caption', sans-serif;
   }
   .singUpWrapper a{
-    color: #990DCE;
+    color:  #B85ADB;
     font-family: 'PT Sans Caption', sans-serif;
     
     text-decoration: none;

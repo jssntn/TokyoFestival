@@ -18,13 +18,13 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .box1 p {
+    text-align: left;
     font-size: 1.3rem;
     color: #F5F5F5;
-    margin-left: 7rem;
     margin-top: 3rem;
 }
 
@@ -38,6 +38,7 @@
 }
 
 .box2 p {
+    text-align: left;
     font-size: 1.3rem;
     color: #F5F5F5;
     margin-top: 3rem;
@@ -49,13 +50,13 @@
     width: 40rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .box3 p {
+    text-align: left;
     font-size: 1.3rem;
     color: #F5F5F5;
-    margin-right: 7rem;
     margin-top: 3rem;
 }
 
@@ -116,12 +117,24 @@
         flex-direction: column;
         align-items: center;
     }
+    .box1 p {
+        text-align: left;
+        font-size: 1.3rem;
+        color: #F5F5F5;
+        margin-top: 3rem;
+    }
     .box2{
         text-align: center;
         width: 40rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .box2 p {
+        text-align: left;
+        font-size: 1.3rem;
+        color: #F5F5F5;
+        margin-top: 3rem;
     }
     .box3{
         text-align: center;
@@ -130,7 +143,12 @@
         flex-direction: column;
         align-items: center;
     }
-
+    .box3 p {
+        text-align: left;
+        font-size: 1.3rem;
+        color: #F5F5F5;
+        margin-top: 3rem;
+    }
     .navbarResponsivo {
         display: flex;
         justify-content: center;

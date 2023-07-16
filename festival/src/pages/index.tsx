@@ -9,7 +9,7 @@ import TipoIngresso from '@/components/tipoIngresso/tipoIngresso'
 import Link from 'next/link';
 import PhotoCard from '../components/photoCard/photoCard'
 import HomeIngressoCard from '@/components/homeIngressoCard/homeIngressoCard'
-import NavbarResponsivo from '@/components/navbarResponsivo/NavbarResponsivo'
+import NavbarResponsivo from '@/components/NavbarResponsivo/NavbarResponsivo'
 import imagem1 from '../../public/img/cardImage1.svg'
 import imagem2 from '../../public/img/cardImage2.svg'
 import imagem3 from '../../public/img/cardImage3.svg'
